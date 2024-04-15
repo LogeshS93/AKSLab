@@ -1,1 +1,4 @@
 https://community.ibm.com/community/user/integration/blogs/aiden-gallagher1/2022/11/09/app-connect-enterprise-container-image-hierarchies
+# Ubuntu 20.10 and newer
+sudo apt-get update
+sudo apt-get -y install podman
