@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: AutomateDeploymentIIB
+  labels:
+    app: AutomateDeploymentIIB
+  namespace: namespace-workflow-1713266697939
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: AutomateDeploymentIIB
+  template:
+    metadata:
+      labels:
+        app: AutomateDeploymentIIB
+    spec:
+      containers:
+        - name: AutomateDeploymentIIB
+          image: acrworkflow1713266697939.azurecr.io/image-workflow-1713266697939:latest
+          ports:
+            - containerPort: 8080
